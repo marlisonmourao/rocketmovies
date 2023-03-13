@@ -12,7 +12,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-size: 1.6rem;
     background: ${({ theme }) => theme.background};
   }
+
+  body, input, button, textarea {
+    font-size: 1.6rem;
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button, a{
+    cursor: pointer;
+    transition: filter 0.2s;
+  }
+
+  button:hover, a:hover {
+    filter: brightness(0.9)
+  }
+
 `
