@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import BackgroundImg from '../../assets/background.png'
+
 export const Container = styled.div`
   height: 100vh;
 
@@ -36,4 +38,21 @@ export const TextSignin = styled.p`
   color: ${({ theme }) => theme['gray-100']};
 
   margin: 4.8rem 0;
+`
+
+export const ButtonNew = styled.button`
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: ${({ theme }) => theme['pink-700']};
+
+  border: none;
+  background: transparent;
+
+  margin: 4.2rem auto;
+`
+
+export const Background = styled.div`
+  flex: 1;
+  background: url(${BackgroundImg}) no-repeat center center;
+  background-size: cover;
 `
