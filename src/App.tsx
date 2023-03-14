@@ -1,5 +1,5 @@
-import { SignUp } from './pages/SignUp'
+import { Home } from './pages/Home'
 
 export function App() {
-  return <SignUp />
+  return <Home />
 }
