@@ -13,6 +13,7 @@ export const Container = styled.header`
 
 export const Content = styled.main`
   grid-area: content;
+  margin-top: 5rem;
 `
 
 export const ContainerButtonCreate = styled.div`

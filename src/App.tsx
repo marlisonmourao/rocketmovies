@@ -1,5 +1,5 @@
-import { Home } from './pages/Home'
+import { NewNotes } from './pages/NewNotes'
 
 export function App() {
-  return <Home />
+  return <NewNotes />
 }
