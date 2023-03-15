@@ -8,7 +8,10 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   gap: 6.3rem;
-  /* justify-content: space-between; */
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #3e3b47;
 `
 
 export const Heading = styled.h2`
