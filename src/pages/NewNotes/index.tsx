@@ -4,6 +4,7 @@ import { Header } from '../../components/Header'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Input } from '../../components/Input'
 import { TextArea } from '../../components/TextArea'
+import { Markers, Tags } from '../../components/TextArea/styles'
 
 export function NewNotes() {
   return (
@@ -24,6 +25,10 @@ export function NewNotes() {
         </InputContainer>
 
         <TextArea placeholder="Observações" />
+
+        <Markers>Marcadores</Markers>
+
+        <Tags></Tags>
       </Form>
     </Container>
   )
