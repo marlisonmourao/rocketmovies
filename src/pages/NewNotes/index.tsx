@@ -1,10 +1,19 @@
-import { Container, Form, ButtonText, InputContainer } from './styles'
+import {
+  Container,
+  Form,
+  ButtonText,
+  InputContainer,
+  Tags,
+  Buttons,
+} from './styles'
 
 import { Header } from '../../components/Header'
 import { FiArrowLeft } from 'react-icons/fi'
 import { Input } from '../../components/Input'
 import { TextArea } from '../../components/TextArea'
-import { Markers, Tags } from '../../components/TextArea/styles'
+import { Markers } from '../../components/TextArea/styles'
+import { Tag } from '../../components/Tag'
+import { Button } from '../../components/Button'
 
 export function NewNotes() {
   return (
@@ -28,7 +37,16 @@ export function NewNotes() {
 
         <Markers>Marcadores</Markers>
 
-        <Tags></Tags>
+        <Tags>
+          <Tag onClick={() => {}} value="" />
+
+          <Tag onClick={() => {}} value="" isNew placeholder="Novo marcador" />
+        </Tags>
+
+        <Buttons>
+          <Button color title="Excluir file" />
+          <Button title="Excluir file" />
+        </Buttons>
       </Form>
     </Container>
   )

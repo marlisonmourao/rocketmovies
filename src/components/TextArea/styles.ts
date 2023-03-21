@@ -24,13 +24,3 @@ export const Markers = styled.p`
 
   margin-top: 4rem;
 `
-
-export const Tags = styled.div`
-  width: 100%;
-  background-color: ${({ theme }) => theme['gray-900']};
-  padding: 4rem;
-
-  border-radius: 0.8rem;
-  display: flex;
-  gap: 2.4rem;
-`

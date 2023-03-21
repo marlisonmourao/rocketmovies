@@ -33,3 +33,27 @@ export const InputContainer = styled.div`
 
   margin: 4rem 0;
 `
+
+export const Tags = styled.div`
+  width: 100%;
+  background-color: ${({ theme }) => theme['gray-900']};
+  padding: 1.6rem;
+
+  margin-top: 2.4rem;
+
+  border-radius: 0.8rem;
+  display: flex;
+  gap: 2.4rem;
+  border-radius: 0.8rem;
+`
+
+export const Buttons = styled.div`
+  margin-top: 3rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  padding-bottom: 4rem;
+`
