@@ -1,5 +1,5 @@
-import { NewNotes } from './pages/NewNotes'
+import { Profile } from './pages/Profile'
 
 export function App() {
-  return <NewNotes />
+  return <Profile />
 }
