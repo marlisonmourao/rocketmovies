@@ -12,5 +12,6 @@ export const defaultTheme = {
   'gray-700': '#262529',
   'gray-900': '#0D0C0F',
 
+  'pink-100': ' hsla(349, 100%, 76%, 0.05)',
   'pink-700': '#FF859B',
 } as const
