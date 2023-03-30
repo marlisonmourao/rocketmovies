@@ -1,5 +1,5 @@
-import { MovieDetails } from './pages/MovieDetails'
+import { Profile } from './pages/Profile'
 
 export function App() {
-  return <MovieDetails />
+  return <Profile />
 }

@@ -26,16 +26,20 @@ export const ButtonGoBack = styled.button`
 `
 
 export const Form = styled.form`
-  width: 100%;
+  width: 34rem;
 
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: -9.4rem auto;
+
+  flex-direction: column;
 `
 
 export const ImageContainer = styled.div`
   display: flex;
   position: relative;
+  width: fit-content;
 `
 
 export const UserAvatar = styled.img`
@@ -68,4 +72,11 @@ export const LabelInputPhoto = styled.label`
 
 export const InputPhoto = styled.input`
   display: none;
+`
+
+export const InputsWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  margin-top: 6.4rem;
+  flex-direction: column;
 `
