@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  margin-top: 8.1rem;
+  padding: 8.1rem 0;
 `
 
 export const ButtonText = styled.span`
@@ -85,4 +85,12 @@ export const Tag = styled.strong`
   border-radius: 0.8rem;
   padding: 0.5rem 1.6rem;
   margin-right: 0.8rem;
+`
+
+export const Summary = styled.p`
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: ${({ theme }) => theme['gray-100']};
+
+  text-align: justify;
 `
