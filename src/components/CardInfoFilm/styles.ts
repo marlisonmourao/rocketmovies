@@ -25,8 +25,6 @@ export const Description = styled.p`
   margin-bottom: 2rem;
 `
 
-export const ContainerTags = styled.div``
-
 export const Tag = styled.strong`
   font-size: 1.2rem;
   line-height: 1.4rem;
