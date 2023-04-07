@@ -1,12 +1,19 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.button`
   width: 100%;
   padding: 3.2rem;
 
   background: ${({ theme }) => theme['card-background']};
   border-radius: 1.6rem;
   margin-bottom: 2.4rem;
+
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 `
 
 export const Title = styled.h2`
@@ -23,6 +30,7 @@ export const Description = styled.p`
   line-height: 1.9rem;
   color: ${({ theme }) => theme['gray-200']};
   margin-bottom: 2rem;
+  text-align: justify;
 `
 
 export const Tag = styled.strong`

@@ -1,8 +1,11 @@
+import { ButtonHTMLAttributes } from 'react'
 import { Container, Description, Tag, Title } from './styles'
 
-export function CardInfoFilme() {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {}
+
+export function CardInfoFilme({ ...rest }: Props) {
   return (
-    <Container>
+    <Container {...rest}>
       <Title>Interestellar</Title>
       <Description>
         Pragas nas colheitas fizeram a civilização humana regredir para uma
@@ -13,8 +16,10 @@ export function CardInfoFilme() {
         inteligência desconhecida que está enviando mensagens codificadas
       </Description>
 
-      <Tag>Ficcção</Tag>
-      <Tag>series</Tag>
+      <div>
+        <Tag>Ficcção</Tag>
+        <Tag>series</Tag>
+      </div>
     </Container>
   )
 }
