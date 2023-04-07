@@ -72,6 +72,7 @@ export const LabelInputPhoto = styled.label`
 
 export const InputPhoto = styled.input`
   display: none;
+  cursor: pointer;
 `
 
 export const InputsWrapper = styled.div`

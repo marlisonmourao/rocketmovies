@@ -1,5 +1,5 @@
-import { Profile } from './pages/Profile'
+import { Routes } from './router'
 
 export function App() {
-  return <Profile />
+  return <Routes />
 }
