@@ -15,6 +15,8 @@ export const ButtonText = styled.span`
 
   display: flex;
   gap: 1rem;
+
+  cursor: pointer;
 `
 
 export const Form = styled.form`

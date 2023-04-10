@@ -1,4 +1,5 @@
 import { FiArrowLeft } from 'react-icons/fi'
+import { useNavigate } from 'react-router-dom'
 import { TbClockHour4 } from 'react-icons/tb'
 import { Header } from '../../components/Header'
 import {
@@ -17,12 +18,18 @@ import {
 } from './styles'
 
 export function MovieDetails() {
+  const navigate = useNavigate()
+
+  function handleGoBack() {
+    navigate(-1)
+  }
+
   return (
     <Container>
       <Header />
 
       <Content>
-        <ButtonText>
+        <ButtonText onClick={handleGoBack}>
           <FiArrowLeft />
           Voltar
         </ButtonText>

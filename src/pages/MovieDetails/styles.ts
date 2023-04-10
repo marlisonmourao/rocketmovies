@@ -16,6 +16,8 @@ export const ButtonText = styled.span`
   color: ${({ theme }) => theme['pink-700']};
   margin-top: 4rem;
 
+  cursor: pointer;
+
   display: flex;
   gap: 1rem;
 `

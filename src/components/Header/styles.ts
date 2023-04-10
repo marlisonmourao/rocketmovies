@@ -40,6 +40,11 @@ export const AvatarContainer = styled.div`
   justify-content: flex-end;
 
   gap: 0.8rem;
+
+  > button {
+    border: none;
+    background-color: transparent;
+  }
 `
 
 export const UserContainer = styled.div`

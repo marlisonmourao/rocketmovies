@@ -22,7 +22,7 @@ export function Home() {
   }
 
   return (
-    <Container onClick={handleMovieDetails}>
+    <Container>
       <Header />
 
       <Content>
@@ -34,8 +34,7 @@ export function Home() {
           </ButtonCreate>
         </ContainerButtonCreate>
 
-        <CardInfoFilme />
-        <CardInfoFilme />
+        <CardInfoFilme onClick={handleMovieDetails} />
       </Content>
     </Container>
   )

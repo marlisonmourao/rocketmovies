@@ -7,7 +7,15 @@ import {
   UserContainer,
 } from './styles'
 
+import { useNavigate } from 'react-router-dom'
+
 export function Header() {
+  const navigate = useNavigate()
+
+  function handleProfile() {
+    navigate('/profile')
+  }
+
   return (
     <Container>
       <Heading>RocketMovies</Heading>
@@ -19,7 +27,9 @@ export function Header() {
           <button>sair</button>
         </UserContainer>
 
-        <UserAvatar src="https://github.com/marlisonmourao.png" />
+        <button onClick={handleProfile}>
+          <UserAvatar src="https://github.com/marlisonmourao.png" />
+        </button>
       </AvatarContainer>
     </Container>
   )

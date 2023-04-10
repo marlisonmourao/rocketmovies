@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { FiArrowLeft, FiCamera, FiLock, FiMail, FiUser } from 'react-icons/fi'
 import {
   ButtonGoBack,
@@ -15,10 +16,15 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function Profile() {
+  const navigate = useNavigate()
+
+  function handleGoBack() {
+    navigate(-1)
+  }
   return (
     <Container>
       <Header>
-        <ButtonGoBack>
+        <ButtonGoBack onClick={handleGoBack}>
           <FiArrowLeft />
           Voltar
         </ButtonGoBack>

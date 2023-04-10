@@ -14,13 +14,20 @@ import { TextArea } from '../../components/TextArea'
 import { Markers } from '../../components/TextArea/styles'
 import { Tag } from '../../components/Tag'
 import { Button } from '../../components/Button'
+import { useNavigate } from 'react-router-dom'
 
 export function NewNotes() {
+  const navigate = useNavigate()
+
+  function handleGoBack() {
+    navigate(-1)
+  }
+
   return (
     <Container>
       <Header />
 
-      <ButtonText>
+      <ButtonText onClick={handleGoBack}>
         <FiArrowLeft />
         Voltar
       </ButtonText>
