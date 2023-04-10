@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { FiLock, FiMail } from 'react-icons/fi'
 
 import {
@@ -14,6 +15,12 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function SignIn() {
+  const navigation = useNavigate()
+
+  function handleSignUp() {
+    navigation('signup')
+  }
+
   return (
     <Container>
       <Form>
@@ -28,7 +35,7 @@ export function SignIn() {
 
         <Button title="Entrar" />
 
-        <ButtonNew>Criar conta</ButtonNew>
+        <ButtonNew onClick={handleSignUp}>Criar conta</ButtonNew>
       </Form>
 
       <Background />
