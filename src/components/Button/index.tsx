@@ -1,10 +1,15 @@
+import { ButtonHTMLAttributes } from 'react'
 import { Container } from './styles'
 
-interface Props {
+interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string
-  color?: boolean
+  colorButton?: boolean
 }
 
-export function Button({ title, color = false }: Props) {
-  return <Container background={color}>{title}</Container>
+export function Button({ title, colorButton = false, ...rest }: Props) {
+  return (
+    <Container {...rest} background={colorButton}>
+      {title}
+    </Container>
+  )
 }

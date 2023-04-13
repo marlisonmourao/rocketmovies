@@ -51,7 +51,7 @@ export function NewNotes() {
         </Tags>
 
         <Buttons>
-          <Button color title="Excluir file" />
+          <Button colorButton title="Excluir file" />
           <Button title="Excluir file" />
         </Buttons>
       </Form>

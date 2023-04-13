@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FiLock, FiMail } from 'react-icons/fi'
+import { useAuth } from '../../hooks/useAuth'
 
 import {
   Container,
@@ -15,7 +17,16 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
 export function SignIn() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const { signIn } = useAuth()
+
   const navigation = useNavigate()
+
+  function handleSignin() {
+    signIn(email, password)
+  }
 
   function handleSignUp() {
     navigation('signup')
@@ -29,11 +40,19 @@ export function SignIn() {
 
         <TextSignin>Faça seu login</TextSignin>
 
-        <Input icon={FiMail} placeholder="E-mail" />
+        <Input
+          icon={FiMail}
+          placeholder="E-mail"
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-        <Input icon={FiLock} placeholder="Senha" />
+        <Input
+          icon={FiLock}
+          placeholder="Senha"
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
-        <Button title="Entrar" />
+        <Button title="Entrar" onClick={handleSignin} />
 
         <ButtonNew onClick={handleSignUp}>Criar conta</ButtonNew>
       </Form>
